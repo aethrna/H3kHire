@@ -1,0 +1,11 @@
+.git
+.gitignore
+.editorconfig
+node_modules
+dist
+.env
+.env.local
+.env.*.local
+storage/logs
+tests
+.phpunit.result.cache

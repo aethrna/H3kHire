@@ -1,5 +1,10 @@
 {
   "framework": "laravel",
-  "buildCommand": "npm run build",
-  "outputDirectory": "public"
+  "buildCommand": "composer install --no-dev && npm run build",
+  "outputDirectory": "public",
+  "functions": {
+    "api/index.php": {
+      "runtime": "php:8.3"
+    }
+  }
 }
