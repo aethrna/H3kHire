@@ -17,10 +17,10 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->append(\App\Http\Middleware\CheckPostSize::class);
         $middleware->trustProxies(
             '*',
-            Request::HEADER_X_FOWARDED_FOR |
-                Request::HEADER_X_FOWARDED_HOST |
-                Request::HEADER_X_FOWARDED_PORT |
-                Request::HEADER_X_FOWARDED_PROTO
+            Request::HEADER_X_FORWARDED_FOR |
+                Request::HEADER_X_FORWARDED_HOST |
+                Request::HEADER_X_FORWARDED_PORT |
+                Request::HEADER_X_FORWARDED_PROTO
 
         );
     })
